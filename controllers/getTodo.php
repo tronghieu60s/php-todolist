@@ -17,7 +17,7 @@ foreach ($todoList as $todo) : ?>
         </td>
         <td>
             <button type="button" class="btn btn-warning btn-sm">Sửa</button>
-            <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+            <button id-todo="<?= $todo["id"] ?>" type="button" class="btn btn-danger btn-sm btn-delete-todo">Xóa</button>
         </td>
     </tr>
 <?php $index += 1;

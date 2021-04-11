@@ -18,4 +18,11 @@ class TodoModel extends Db
         $sql->bind_param("si", $name, $status);
         return $sql->execute();
     }
+
+    public function deleteUserWithId($id)
+    {
+        $sql = self::$connection->prepare("DELETE FROM `todolist` WHERE `todolist`.`id` = ?");
+        $sql->bind_param("i", $id);
+        return $sql->execute();
+    }
 }
