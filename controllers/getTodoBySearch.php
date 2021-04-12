@@ -1,6 +1,9 @@
 <?php
 require "./app.php";
-$todoList = $todoModel->getTodoList()
+$todoList = Array();
+if (isset($_GET["search"])) :
+    $todoList = $todoModel->getTodoListBySearchName($_GET["search"]);
+endif;
 ?>
 
 <?php $index = 1;
