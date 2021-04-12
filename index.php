@@ -4,7 +4,7 @@
 <?php include_once "./views/head.php" ?>
 
 <body>
-    <div class="pt-5">
+    <div class="py-5">
         <div class="container">
             <h1 class="text-center">Quản Lý Công Việc</h1>
             <div class="row mt-5">
